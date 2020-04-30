@@ -1,5 +1,3 @@
-const a = 5;
-const b = 18;
+import app from './app';
 
-const sum = a + b;
-console.log(sum);
+app.listen(3000);
