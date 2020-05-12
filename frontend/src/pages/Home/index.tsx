@@ -13,7 +13,7 @@ import { Container } from './styles';
 //Components
 
 //Images
-import homeImage from '../../assets/home-image/events_around.png';
+import homeImage from '../../assets/home-image/interact.gif';
 
 /* Tipagens de funções e estados do redux */
 interface StateProps {
@@ -44,8 +44,8 @@ const Home = (/* props: Props */) => {
   /* const { users } = props; */
 
   return(
-
     <Container>
+      <h1>Events</h1>
       <img src={homeImage} alt="home-image" />
     </Container>
   )
