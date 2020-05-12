@@ -13,7 +13,7 @@ import { Container } from './styles';
 //Components
 
 //Images
-import homeImage from '../../assets/home-image/interact.gif';
+import homeImage from '../../assets/home-image/tickets-events.gif';
 
 /* Tipagens de funções e estados do redux */
 interface StateProps {
@@ -46,7 +46,18 @@ const Home = (/* props: Props */) => {
   return(
     <Container>
       <h1>Events</h1>
+      <input type="text" placeholder="Password"/>
+      <input type="text" placeholder="Username"/>
       <img src={homeImage} alt="home-image" />
+      <button>Sign Up</button>
+      <button>Sign In</button>
+      <section>
+        Uma plataforma de interação entre os
+        usuários que desejam <br /> participar de eventos e 
+        e desenvolver eventos como hackatons <br /> e outros, 
+        compartilhar experiências e aprender também, 
+        da melhor <br /> e mais divertida maneira possível! Tudo preparado pra você!
+      </section>
     </Container>
   )
 }
