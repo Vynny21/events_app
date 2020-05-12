@@ -54,7 +54,7 @@ const Home = (/* props: Props */) => {
       <section>
         Uma plataforma de interação entre os
         usuários que desejam <br /> participar de eventos e 
-        e desenvolver eventos como hackatons <br /> e outros, 
+        os que desenjam desenvolve-los, como as hackatons <br /> e outros, 
         compartilhar experiências e aprender também, 
         da melhor <br /> e mais divertida maneira possível! Tudo preparado pra você!
       </section>
