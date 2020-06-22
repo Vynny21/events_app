@@ -1,23 +1,22 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import Home from './pages/Home';
+import GlobalStyle from './styles/global';
 
-import GlobalStyles from './styles/global';
+import Routes from './routes';
 
-import store from './store';
-import Routes from './routes/routes';
+import AppProvider from './hooks';
 
-import history from './services/history';
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <AppProvider>
+        <Routes />
+      </AppProvider>
 
-const App = () => (
-  <Provider store={store}>
-    <Router history={history}>
-      <Routes />
-      <GlobalStyles />
-    </Router>
-  </Provider>
-)
+      <GlobalStyle />
+    </BrowserRouter>
+  );
+};
 
 export default App;
