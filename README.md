@@ -208,7 +208,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </br>
 
 <p align="center">
-  <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1588811213/GoBarber/Kapture_2020-05-06_at_21.25.26_tijnl5.gif">
+  <img alt="Layout" src=" ./github/main-image/events-app.png">
 </p>
 
 ## 💇🏻‍♂️ About the project
