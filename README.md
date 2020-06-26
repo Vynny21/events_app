@@ -208,7 +208,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </br>
 
 <p align="center">
-  <img alt="Layout" src=" ./github/main-image/events-app.png">
+  <img alt="Layout" src="./github/main-image/events-app.png">
 </p>
 
 ## 💇🏻‍♂️ About the project
@@ -302,6 +302,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <h3 align="center">
   React Native Application for GoBarber project
 </h3>
+
+<p align="center">
+  <img alt="Layout" src="./github/main-image/events-app.png">
+</p>
+
 
 <p align="center">The best way to schedule your service!</p>
 
