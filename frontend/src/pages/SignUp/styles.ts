@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
-import signUpBackgroundImg from '../../assets/events-signup.jpg';
+import signUpBackgroundImg from '../../assets/properties.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -40,19 +40,19 @@ export const AnimationContainer = styled.div`
   animation: ${appearFromRight} 1s;
 
   form {
-    margin: 50px 0;
+    margin: -30px 0;
     width: 340px;
     text-align: center;
 
     h1 {
-      margin-bottom: 24px;
+      margin-bottom: 10px;
     }
   }
 
   > a {
-    color: #ff9000;
+    color: ${props => props.theme.colors.text};
     display: block;
-    margin-top: -30px;
+    margin-top: 50px;
     text-decoration: none;
     transition: color 0.3s;
 

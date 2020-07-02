@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackgroundImg from '../../assets/events-signin.png';
+import signInBackgroundImg from '../../assets/youplace.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   align-items: stretch;
 `;
+
 
 export const Content = styled.div`
   display: flex;
@@ -39,19 +40,25 @@ export const AnimationContainer = styled.div`
 
   animation: ${appearFromLeft} 1s;
 
+  h3 {
+    font-size: 15px;
+    color: #ff9000;
+  }
+
   form {
-    margin: 80px 0;
+    margin: 5px 0;
     width: 340px;
     text-align: center;
 
     h1 {
-      margin-bottom: 24px;
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
 
     a {
-      color: #f4ede8;
+      color: ${props => props.theme.colors.text};
       display: block;
-      margin-top: 24px;
+      margin-top: 10px;
       text-decoration: none;
       transition: color 0.3s;
 
@@ -62,9 +69,9 @@ export const AnimationContainer = styled.div`
   }
 
   > a {
-    color: #ff9000;
+    color: ${props => props.theme.colors.text};
     display: block;
-    margin-top: -40px;
+    margin-top: 24px;
     text-decoration: none;
     transition: color 0.3s;
 
