@@ -3,14 +3,14 @@
   <img alt="Layout" src="./github/main-image/signin/youplace-signin-advertising.png">
 </h1>
 
-<h1 align="center">Repository with Frontend, Backend and Mobile of the YouPlace project.</h1>
+<h1 align="center">Repository with Frontend, Backend and Mobile of the Events project.</h1>
 <h3>See below, within access to each module of the project within its respective session, being Frontend, Backend and Mobile.</h3>
 
 ## **Clone the FullStack version project and access the folder**
 
 <h1>Backend</h1>
 <h3 align="center">
-  Express Application for YouPlace project
+  Express Application for Events project
 </h3>
 
 <p align="center">
@@ -44,7 +44,7 @@
 
 ## 💇🏻‍♂️ About the project
 
-<p align="center">YouPlace - The best place to rent and sell real estate!</p>
+<p align="center">Events - create and enjoy events your way!</p>
 
 This api is manage app for rental and sale of real estate, developed with Typescript, NodeJs, Express, TypeORM, Postgres e JWT.
 
@@ -85,7 +85,7 @@ Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomn
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Vynny/youplace-app.git && cd youplace-app
+$ git clone https://github.com/Vynny/events_app.git && cd events_app
 
 Go to the backend folder to access the API
 ```
@@ -117,14 +117,14 @@ $ yarn typeorm migration:run
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork Vynny21/youplace-app
+$ gh repo fork Vynny21/events_app
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd youplace-app
+$ git clone your-fork-url && cd events_app
 
 # Create a branch with your feature
 $ git checkout -b my-feature
@@ -152,7 +152,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   ReactJS Application for YouPlace project
 </h3>
 
-<p align="center">The best place to rent and sell real estate!</p>
+<p align="center">Events - create and enjoy events your way!</p>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/badge/typescript-99.2-informational?color=%237D40E7">
@@ -221,7 +221,7 @@ Technologies that I used to develop this web client
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Vynny21/youplace-app.git && cd youplace-app
+$ git clone https://github.com/Vynny21/events_app.git && cd events_app
 ```
 
 **Follow the steps below**
@@ -244,14 +244,14 @@ $ yarn start
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork Vynny21/youplace-app
+$ gh repo fork Vynny21/events_app
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd youplace-app
+$ git clone your-fork-url && cd events_app
 
 # Create a branch with your feature
 $ git checkout -b my-feature
@@ -274,16 +274,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <h1>Mobile</h1>
 
 <h3 align="center">
-  React Native Application for YouPlace project
+  React Native Application for Events project
 </h3>
 
-<p align="center">YouPlace - The best place to rent and sell real estate!</p>
+<p align="center">Events - create and enjoy events your way!</p>
 
 <p align="center">
-  <img alt="Layout" src="./github/main-image/signin/youplace-signin-advertising.png">
+  <img alt="Layout" src="github/main-image/signin/youplace-signin-advertising.png">
 </p>
 <p align="center">
-  <img alt="Layout" src="./github/main-image/signup/youplace-signup-advertising.png">
+  <img alt="Layout" src="github/main-image/signup/youplace-signup-advertising.png">
 </p>
 
 <p align="center">
@@ -340,14 +340,14 @@ Technologies that I used to develop this mobile client
 
 ### Requirements
 
-- Have this application's [API](https://github.com/Vynny21/youplace-app) running
+- Have this application's [API](https://github.com/Vynny21/events_mobile) running
 
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Vynny21/youplace-app.git && cd youplace-app
-OR
-$ git clone https://github.com/Vynny21/youplace_mobile.git
+$ git clone https://github.com/Vynny21/events_mobile.git && cd events_mob
+OR 
+$ git clone https://github.com/Vynny21/events_mobile.git
 
 ```
 
@@ -375,7 +375,7 @@ $ yarn ios
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork Vynny21/youplace_mobile
+$ gh repo fork Vynny21/events_mobile
 ```
 
 **Follow the steps below**
@@ -383,7 +383,7 @@ $ gh repo fork Vynny21/youplace_mobile
 ```bash
 # Clone your fork
 # 
-$ git clone your-fork-url && cd youplace_mobile
+$ git clone your-fork-url && cd events_mobile
 
 # Create a branch with your feature
 $ git checkout -b my-feature
