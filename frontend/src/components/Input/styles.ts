@@ -13,6 +13,7 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 10px;
   padding: 16px;
   width: 100%;
+  height: 50px;
 
   border: 2px solid ${props => props.theme.colors.border};
   color: ${props => props.theme.colors.inputPlaceholder}
@@ -33,14 +34,14 @@ export const Container = styled.div<ContainerProps>`
   ${props =>
     props.isFocused &&
     css`
-      color: #ff9000;
-      border-color: #ff9000;
+      color: #023e8a;
+      border-color: #023e8a;
     `}
 
   ${props =>
     props.isField &&
     css`
-      color: #ff9000;
+      color: #023e8a;
     `}
 
   input {

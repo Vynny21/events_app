@@ -7,6 +7,7 @@ import {
   View,
   TextInput,
   Alert,
+  ImageBackground
 } from 'react-native'
 
 import { ThemeContext } from 'styled-components'
@@ -25,6 +26,13 @@ import getValidationErrors from '../../utils/getValidationErrors'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
+import BackgroundSlider from 'react-background-slider'
+
+//import bg1 from '../../assets/backgrounds/bg-youplace2.jpg'
+//import bg2 from '../../assets/backgrounds/bg-youplace2.jpg'
+//import bg3 from '../../assets/backgrounds/bg-youplace3.jpg'
+//import bg4 from '../../assets/backgrounds/bg-youplace4.jpg'
+
 Icon.loadFont()
 
 import {
@@ -33,8 +41,10 @@ import {
   ForgotPassword,
   ForgotPasswordText,
   CreateAccountButton,
-  CreateAccountButtonText,
+  CreateAccountButtonText
 } from './styles'
+
+import signInBackground from '../../assets/backgrounds/bg-events1.jpg'
 
 interface SignInFormData {
   email: string
@@ -100,12 +110,15 @@ const SignIn: React.FC = () => {
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ flex: 1 }}
         >
-          <Container>
-            <Image source={logo} />
+        <ImageBackground source={signInBackground}
+          style={{width: 425, height: 1000}}>
 
-            <View>
-              <Title>Faça seu logon</Title>
-            </View>
+          <Container>
+              <Image source={logo} />
+
+              <View>
+                <Title>Faça seu logon</Title>
+              </View>
 
             <Form ref={formRef} onSubmit={handleSignIn}>
               <Input
@@ -147,6 +160,7 @@ const SignIn: React.FC = () => {
               <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
             </ForgotPassword>
           </Container>
+          </ImageBackground>
         </ScrollView>
       </KeyboardAvoidingView>
 

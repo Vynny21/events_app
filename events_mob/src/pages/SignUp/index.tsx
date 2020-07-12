@@ -7,6 +7,7 @@ import {
   View,
   TextInput,
   Alert,
+  ImageBackground
 } from 'react-native'
 import Icon from 'react-native-vector-icons/Feather'
 import { useNavigation } from '@react-navigation/native'
@@ -20,10 +21,19 @@ import api from '../../services/api'
 
 import getValidationErrors from '../../utils/getValidationErrors'
 
+import BackgroundSlider from 'react-background-slider'
+
+//import bg1 from '../../assets/backgrounds/bg-youplace2.jpg'
+//import bg2 from '../../assets/backgrounds/bg-youplace2.jpg'
+//import bg3 from '../../assets/backgrounds/bg-youplace3.jpg'
+//import bg4 from '../../assets/backgrounds/bg-youplace4.jpg'
+
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles'
+
+import signUpBackground from '../../assets/backgrounds/bg-events1.jpg'
 
 Icon.loadFont()
 
@@ -92,10 +102,14 @@ const SignUp: React.FC = () => {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         enabled
       >
+
         <ScrollView
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ flex: 1 }}
         >
+          <ImageBackground source={signUpBackground}
+            style={{width: 425, height: 1000}}>
+
           <Container>
             <Image source={logo} />
 
@@ -139,16 +153,17 @@ const SignUp: React.FC = () => {
                 onSubmitEditing={() => formRef.current?.submitForm()}
               />
 
-              <Button
+                <Button
                 style={{width: 275, marginLeft: 40}}
                 onPress={() => {
                   return formRef.current?.submitForm()
                 }}
               >
                 Criar
-              </Button>
-            </Form>
-          </Container>
+                </Button>
+              </Form>
+            </Container>
+          </ImageBackground>
         </ScrollView>
       </KeyboardAvoidingView>
 

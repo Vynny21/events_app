@@ -1,4 +1,4 @@
-import logoL from '../../assets/light/youplace.png'
+import logoL from '../../assets/logo/events-logo.png';
 
 export default {
   title: 'light',
@@ -10,8 +10,8 @@ export default {
 
     background: '#E5E5E5',
     li: '#ffff',
-    text: '#0d0d0d',
+    text: '#FFFFFF',
     inputColor: '#333',
     inputPlaceholder: '#000000',
   },
-}
+};

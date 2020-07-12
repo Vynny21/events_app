@@ -14,12 +14,26 @@ import Button from '../../components/Button';
 
 import { useToast } from '../../hooks/toast';
 
+import BackgroundSlider from 'react-background-slider'
+
+import bg1 from '../../assets/backgrounds/bg-events1.jpg'
+import bg2 from '../../assets/backgrounds/bg-events2.jpg'
+import bg3 from '../../assets/backgrounds/bg-events3.jpg'
+import bg4 from '../../assets/backgrounds/bg-events4.jpg'
+
+
 import { Container, Content, AnimationContainer, Background } from './styles';
 
 interface SignUpFormData {
   name: string;
   email: string;
   password: string;
+}
+
+interface BackgroundImage {
+  images: string[];
+  duration: number;
+  transition: number;
 }
 
 const SignUp: React.FC = () => {
@@ -73,34 +87,37 @@ const SignUp: React.FC = () => {
 
   return (
     <Container>
-      <Background />
-      <Content>
-        <AnimationContainer>
-          <img src={logo} alt="YouPlace" />
+      <BackgroundSlider
+          images={[bg1, bg2, bg3, bg4]}
+          duration={10} transition={2} />        
+          <Content>
+          <AnimationContainer>
+            <img src={logo} alt="Events" />
 
-          <Form ref={formRef} onSubmit={handleSubmit}>
-            <h1>Faça seu cadastro</h1>
+            <Form ref={formRef} onSubmit={handleSubmit}>
+              <h1>Faça seu cadastro</h1>
 
-            <Input name="name" icon={FiUser} placeholder="Nome" />
+              <Input name="name" icon={FiUser} placeholder="Nome" />
 
-            <Input name="email" icon={FiMail} placeholder="E-mail" />
+              <Input name="email" icon={FiMail} placeholder="E-mail" />
 
-            <Input
-              name="password"
-              icon={FiLock}
-              type="password"
-              placeholder="Senha"
-            />
+              <Input
+                name="password"
+                icon={FiLock}
+                type="password"
+                placeholder="Senha"
+              />
 
-            <Button type="submit">Cadastrar</Button>
-          </Form>
+              <Button type="submit">Cadastrar</Button>
+            </Form>
 
-          <Link to="/">
-            <FiArrowLeft />
-            Voltar para logon
-          </Link>
-        </AnimationContainer>
-      </Content>
+            <Link to="/"
+              style={{fontWeight: 'bold'}}>
+              <FiArrowLeft />
+              Voltar para logon
+            </Link>
+          </AnimationContainer>
+        </Content>
     </Container>
   );
 };

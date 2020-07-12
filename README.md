@@ -1,6 +1,11 @@
 <h1 align="center">Yet in development!</h1>
+
 <h1 align="center">
-  <img alt="Layout" src="./github/main-image/signin/youplace-signin-advertising.png">
+  <img alt="Layout" src="./github/main-image/logo/events-logo.png">
+</h1>
+<br/>
+<h1 align="center">
+  <img alt="Layout" src="./github/main-image/video/events-video.gif">
 </h1>
 
 <h1 align="center">Repository with Frontend, Backend and Mobile of the Events project.</h1>
@@ -185,10 +190,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </br>
 
 <p align="center">
-  <img alt="Layout" src="./github/main-image/signin/youplace-signin-advertising.png">
+  <img alt="Layout" src="./github/main-image/signin/events-signin.png">
 </p>
 <p align="center">
-  <img alt="Layout" src="./github/main-image/signup/youplace-signup-advertising.png">
+  <img alt="Layout" src="./github/main-image/signup/events-signup.png">
 </p>
 
 
@@ -280,11 +285,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">Events - create and enjoy events your way!</p>
 
 <p align="center">
-  <img alt="Layout" src="github/main-image/signin/youplace-signin-advertising.png">
+  <img alt="Layout" src="github/main-image/signin/events-signin.png">
 </p>
 <p align="center">
-  <img alt="Layout" src="github/main-image/signup/youplace-signup-advertising.png">
+  <img alt="Layout" src="github/main-image/signup/events-signup.png">
 </p>
+
+<p align="center">Splash-Screen</p>
+<p align="center">
+  <img alt="Layout" src="github/main-image/splashscreen/events-splashscreen.png">
+</p>
+
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/badge/typescript-99.2-informational?color=%237D40E7">

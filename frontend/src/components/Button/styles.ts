@@ -6,19 +6,19 @@ interface ContainerProps {
 }
 
 export const Container = styled.button<ContainerProps>`
-  background: #ff9000;
-  height: 56px;
+  background: #023e8a;
+  height: 40px;
   border-radius: 10px;
   border: 0;
   padding: 0 16px;
-  color: #312e38;
+  color: ${props => props.theme.colors.insideButton};
   width: 100%;
   font-weight: 500;
-  margin-top: 16px;
+  margin-top: 10px;
   transition: background-color 0.3s;
 
   &:hover {
-    background: ${shade(0.2, '#ff9000')};
+    background: ${shade(0.2, '#023e8a')};
   }
 
   cursor: ${({ isLoading }) => (isLoading ? 'not-allowed' : 'pointer')};
