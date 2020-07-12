@@ -5,7 +5,7 @@
 </h1>
 <br/>
 <h1 align="center">
-  <img alt="Layout" src="./github/main-image/video/events-video.gif">
+  <img alt="Layout" src="./github/main-image/gif/events-video.gif">
 </h1>
 
 <h1 align="center">Repository with Frontend, Backend and Mobile of the Events project.</h1>
