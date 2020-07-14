@@ -195,6 +195,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">
   <img alt="Layout" src="./github/main-image/signup/events-signup.png">
 </p>
+<p align="center">
+  <img alt="Layout" src="./github/main-image/reset-password/events-reset-password.png">
+</p>
 
 
 ## 💇🏻‍♂️ About the project

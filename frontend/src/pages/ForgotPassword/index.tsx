@@ -10,10 +10,17 @@ import getValidationErrors from '../../utils/getValidationErrors';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import { Container, Content, AnimationContainer, Background } from './styles';
+import { Container, Content, AnimationContainer } from './styles';
 
 import logoImg from '../../assets/logo/events-logo.png';
 import api from '../../services/api';
+
+import BackgroundSlider from 'react-background-slider'
+
+import bg1 from '../../assets/backgrounds/bg-events1.jpg'
+import bg2 from '../../assets/backgrounds/bg-events2.jpg'
+import bg3 from '../../assets/backgrounds/bg-events3.jpg'
+import bg4 from '../../assets/backgrounds/bg-events4.jpg'
 
 interface ForgotPasswordFormData {
   email: string;
@@ -75,9 +82,12 @@ const ForgotPassword: React.FC = () => {
 
   return (
     <Container>
+      <BackgroundSlider
+        images={[bg1, bg2, bg3, bg4]}
+        duration={10} transition={2} />
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="GoBarber" />
+          <img src={logoImg} alt="Events" />
 
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Recuperar senha</h1>
@@ -95,7 +105,6 @@ const ForgotPassword: React.FC = () => {
           </Link>
         </AnimationContainer>
       </Content>
-      <Background />
     </Container>
   );
 };
