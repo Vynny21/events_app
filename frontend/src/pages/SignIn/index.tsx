@@ -20,6 +20,8 @@ import bg2 from '../../assets/backgrounds/bg-events2.jpg'
 import bg3 from '../../assets/backgrounds/bg-events3.jpg'
 import bg4 from '../../assets/backgrounds/bg-events4.jpg'
 
+import logoImg from '../../assets/logo/events-logo.png'
+
 import { Container, Content, AnimationContainer } from './styles';
 
 interface SignInFormData {
@@ -82,7 +84,7 @@ const SignIn: React.FC = () => {
         duration={10} transition={2} />
         <Content>
           <AnimationContainer>
-            <img src={logo} alt="Events" />
+            <img src={logoImg} alt="Events" />
             
             <Form ref={formRef} onSubmit={handleSubmit}>
               <h1>Faça seu logon</h1>

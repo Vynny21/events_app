@@ -4,7 +4,7 @@
    "port": 5432,
    "username": "postgres",
    "password": "",
-   "database": "getmestres",
+   "database": "eventsdb",
    "synchronize": true,
    "logging": false,
    "entities": [
