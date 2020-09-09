@@ -2,13 +2,14 @@ import React, { useState, useCallback, useEffect, useMemo } from 'react';
 import { isToday, format, parseISO, isAfter } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import DayPicker, { DayModifiers } from 'react-day-picker';
+import MenuIcon from '@material-ui/icons/Menu';
 import 'react-day-picker/lib/style.css';
 
 import { FiPower, FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import * as S from './styles';
 
-import logoImg from '../../assets/logo/events-logo.png';
+import logoImg from '../../assets/logo/internal-logo/events.png';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
@@ -118,7 +119,8 @@ const Dashboard: React.FC = () => {
     <S.Container>
       <S.Header>
         <S.HeaderContent>
-          <img src={logoImg} alt="Logo GoBarber" />
+          <MenuIcon style={{ marginLeft: -45, marginRight: 35, height: 50 }} />
+          <img src={logoImg} alt="Events logo" />
 
           <S.HeaderProfile>
             <img
@@ -144,119 +146,6 @@ const Dashboard: React.FC = () => {
       </S.Header>
 
       <S.Content>
-        <S.Schedule>
-          <h1>Horários agendados</h1>
-          <p>
-            {isToday(selectedDate) && <span>Hoje</span>}
-            <span>{selectedDateAsText}</span>
-            <span>{`${selectedWeekDay}-feira`}</span>
-          </p>
-
-          {isToday(selectedDate) && nextAppointment && (
-            <S.NextAppointment>
-              <strong>Atendimento a seguir</strong>
-              <div>
-                <img
-                  src={
-                    nextAppointment.user.avatar_url ||
-                    'https://api.adorable.io/avatars/80/abott@adorable.io.png'
-                  }
-                  alt={nextAppointment.user.name}
-                />
-
-                <strong>{nextAppointment.user.name}</strong>
-                <span>
-                  <FiClock size={24} />
-                  {nextAppointment.hourFormatted}
-                </span>
-              </div>
-            </S.NextAppointment>
-          )}
-
-          <S.Section>
-            <strong>Manhã</strong>
-
-            {morningAppointments.length === 0 && (
-              <p>Nenhum agendamento neste período</p>
-            )}
-
-            {morningAppointments.map(appointment => (
-              <S.Appointment key={appointment.id}>
-                <span>
-                  <FiClock size={20} />
-                  {appointment.hourFormatted}
-                </span>
-
-                <div>
-                  <img
-                    src={
-                      appointment.user.avatar_url ||
-                      'https://api.adorable.io/avatars/56/abott@adorable.io.png'
-                    }
-                    alt={appointment.user.name}
-                  />
-
-                  <strong>{appointment.user.name}</strong>
-                </div>
-              </S.Appointment>
-            ))}
-          </S.Section>
-          <S.Section>
-            <strong>Tarde</strong>
-
-            {afternoonAppointments.length === 0 && (
-              <p>Nenhum agendamento neste período</p>
-            )}
-
-            {afternoonAppointments.map(appointment => (
-              <S.Appointment key={appointment.id}>
-                <span>
-                  <FiClock size={20} />
-                  {appointment.hourFormatted}
-                </span>
-
-                <div>
-                  <img
-                    src={
-                      appointment.user.avatar_url ||
-                      'https://api.adorable.io/avatars/56/abott@adorable.io.png'
-                    }
-                    alt={appointment.user.name}
-                  />
-
-                  <strong>{appointment.user.name}</strong>
-                </div>
-              </S.Appointment>
-            ))}
-          </S.Section>
-        </S.Schedule>
-        <S.Calendar>
-          <DayPicker
-            weekdaysShort={['D', 'S', 'T', 'Q', 'Q', 'S', 'S']}
-            fromMonth={new Date()}
-            disabledDays={[{ daysOfWeek: [0, 6] }, ...disableDays]}
-            modifiers={{
-              available: { daysOfWeek: [1, 2, 3, 4, 5] },
-            }}
-            onMonthChange={handleMonthChange}
-            selectedDays={selectedDate}
-            onDayClick={handleDateChange}
-            months={[
-              'Janeiro',
-              'Fevereiro',
-              'Março',
-              'Abril',
-              'Maio',
-              'Junho',
-              'Julho',
-              'Agosto',
-              'Setembro',
-              'Outubro',
-              'Novembro',
-              'Dezembro',
-            ]}
-          />
-        </S.Calendar>
       </S.Content>
     </S.Container>
   );

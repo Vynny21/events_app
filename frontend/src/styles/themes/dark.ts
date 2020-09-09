@@ -15,6 +15,7 @@ export default {
     text: '#FFFFFF',
     inputColor: '#232129',
     inputPlaceholder: '#666360',
+    backgroundToggle: '#28262e',
     insideButton: '#FFFFFF'
   },
 }

@@ -3,7 +3,7 @@ import { ThemeProvider, DefaultTheme } from 'styled-components'
 import { BrowserRouter as Router } from 'react-router-dom'
 import usePersistedState from './utils/usePersistedState'
 
-import Header from './components/Header'
+import SwitchToggle from './components/SwitchToggle'
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'
 
@@ -29,7 +29,7 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <AppProvider>
-          <Header toggleTheme={toggleTheme} />
+          {/* <SwitchToggle toggleTheme={toggleTheme} /> */}
           <Routes />
         </AppProvider>
         <GlobalStyle />

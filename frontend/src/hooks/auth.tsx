@@ -26,6 +26,8 @@ interface AuthContextData {
   updateUser(user: User): void;
 }
 
+// useCallback(() => {}, []) => só altera a função quando necessario
+
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 const AuthProvider: React.FC = ({ children }) => {
@@ -42,9 +44,9 @@ const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    const reseponse = await api.post('users/auth', { email, password });
+    const response = await api.post('users/auth', { email, password });
 
-    const { token, user } = reseponse.data;
+    const { token, user } = response.data;
 
     localStorage.setItem('@events:token', token);
     localStorage.setItem('@events:user', JSON.stringify(user));

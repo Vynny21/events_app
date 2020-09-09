@@ -16,6 +16,7 @@ declare module 'styled-components' {
       text: string
       inputColor: string
       inputPlaceholder: string
+      backgroundToggle: string
       insideButton: string
     }
   }

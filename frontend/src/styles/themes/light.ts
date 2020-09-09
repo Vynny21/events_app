@@ -12,9 +12,10 @@ export default {
     background: '#FFFFFF',
     li: '#ffff',
     toggle: '#0d0d0d',
-    text: '##FFFFFF',
+    text: '#FFFFFF',
     inputColor: '#E5E5E5',
     inputPlaceholder: '#000000',
+    backgroundToggle: '#28262e',
     insideButton: '#293241'
   },
 }

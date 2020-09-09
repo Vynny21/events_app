@@ -15,10 +15,11 @@ export const Container = styled.button<ContainerProps>`
   width: 100%;
   font-weight: 500;
   margin-top: 10px;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease 0s, transform 0.2s ease 0s;
 
   &:hover {
     background: ${shade(0.2, '#023e8a')};
+    /* transform: translate3d(21px, -31px, -67.5px); */
   }
 
   cursor: ${({ isLoading }) => (isLoading ? 'not-allowed' : 'pointer')};

@@ -8,7 +8,7 @@ interface Props {
   toggleTheme(): void
 }
 
-const Header: React.FC<Props> = ({ toggleTheme }) => {
+const SwitchToggle: React.FC<Props> = ({ toggleTheme }) => {
   const { colors, title, logo } = useContext(ThemeContext)
 
   return (
@@ -30,4 +30,4 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   )
 }
 
-export default Header
+export default SwitchToggle
